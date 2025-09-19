@@ -116,37 +116,35 @@ const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project) => (
             <Card 
               key={project.id} 
-              className={`group hover:shadow-card transition-smooth gradient-card border-border/50 ${
-                project.featured ? "lg:col-span-2" : ""
-              }`}
+              className="group hover:shadow-card transition-smooth gradient-card border-border/50 flex flex-col"
             >
-              <CardHeader className="pb-4">
-                <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center">
+              <CardHeader className="pb-4 flex-shrink-0">
+                <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center overflow-hidden">
                   <span className="text-muted-foreground">Project Preview</span>
                 </div>
                 
                 <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle className="text-xl mb-2 group-hover:text-primary transition-smooth">
+                  <div className="flex-1">
+                    <CardTitle className="text-lg mb-2 group-hover:text-primary transition-smooth line-clamp-2">
                       {project.title}
                     </CardTitle>
-                    <CardDescription className="text-sm">
+                    <CardDescription className="text-sm line-clamp-3">
                       {project.description}
                     </CardDescription>
                   </div>
                   {project.featured && (
-                    <Badge variant="secondary" className="ml-2 bg-primary/10 text-primary border-primary/20">
+                    <Badge variant="secondary" className="ml-2 bg-primary/10 text-primary border-primary/20 flex-shrink-0">
                       Featured
                     </Badge>
                   )}
                 </div>
               </CardHeader>
 
-              <CardContent>
+              <CardContent className="flex-shrink-0">
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, index) => (
                     <Badge key={index} variant="outline" className="text-xs">
@@ -156,7 +154,7 @@ const Projects = () => {
                 </div>
               </CardContent>
 
-              <CardFooter className="pt-4">
+              <CardFooter className="pt-4 mt-auto flex-shrink-0">
                 <div className="flex gap-3 w-full">
                   <Button variant="tech" size="sm" asChild className="flex-1">
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
