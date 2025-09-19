@@ -51,7 +51,7 @@ const Navigation = () => {
               onClick={() => scrollToSection("hero")}
               className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent hover:scale-105 transition-smooth"
             >
-              Alex.dev
+              Yuvaraj.dev
             </button>
           </div>
 

@@ -18,7 +18,7 @@ const Footer = () => {
               onClick={scrollToTop}
               className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent hover:scale-105 transition-smooth"
             >
-              Alex.dev
+              Yuvaraj.dev
             </button>
             <p className="text-muted-foreground leading-relaxed">
               Computer Science Engineer passionate about creating innovative digital experiences 
@@ -101,7 +101,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-muted-foreground text-sm">
-              © {currentYear} Alex Developer. All rights reserved.
+              © {currentYear} Yuvaraj Developer. All rights reserved.
             </p>
             
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">

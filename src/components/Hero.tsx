@@ -32,7 +32,7 @@ const Hero = () => {
         <div className="animate-slide-up">
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6">
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Alex Developer
+              Yuvaraj Developer
             </span>
           </h1>
           
@@ -78,7 +78,7 @@ const Hero = () => {
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="mailto:contact@alexdev.com" aria-label="Send Email">
+              <a href="mailto:contact@yuvarajdev.com" aria-label="Send Email">
                 <Mail className="h-5 w-5" />
               </a>
             </Button>

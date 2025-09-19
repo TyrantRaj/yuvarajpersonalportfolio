@@ -49,7 +49,7 @@ const Contact = () => {
       icon: <Linkedin className="h-5 w-5" />,
       label: "LinkedIn",
       href: "https://linkedin.com/in/alexdeveloper",
-      username: "Alex Developer"
+      username: "Yuvaraj Developer"
     },
     {
       icon: <Twitter className="h-5 w-5" />,
