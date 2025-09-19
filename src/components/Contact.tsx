@@ -18,46 +18,48 @@ const Contact = () => {
   const { toast } = useToast();
 
   const contactInfo = [
-    {
-      icon: <Mail className="h-5 w-5" />,
-      label: "Email",
-      value: "alex@developer.com",
-      href: "mailto:alex@developer.com"
-    },
-    {
-      icon: <Phone className="h-5 w-5" />,
-      label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
-    },
-    {
-      icon: <MapPin className="h-5 w-5" />,
-      label: "Location",
-      value: "San Francisco, CA",
-      href: "#"
-    }
-  ];
+  {
+    icon: <Mail className="h-5 w-5" />,
+    label: "Email",
+    value: "tyrantraj@gmail.com",
+    href: "mailto:tyrantraj@gmail.com"
+  },
+  {
+    icon: <Phone className="h-5 w-5" />,
+    label: "Phone",
+    value: "+91 6374189347",
+    href: "tel:+916374189347"
+  },
+  {
+    icon: <MapPin className="h-5 w-5" />,
+    label: "Location",
+    value: "India, Chennai",
+    href: "#"
+  }
+];
+
 
   const socialLinks = [
-    {
-      icon: <Github className="h-5 w-5" />,
-      label: "GitHub",
-      href: "https://github.com/alexdeveloper",
-      username: "@alexdeveloper"
-    },
-    {
-      icon: <Linkedin className="h-5 w-5" />,
-      label: "LinkedIn",
-      href: "https://linkedin.com/in/alexdeveloper",
-      username: "Yuvaraj Developer"
-    },
-    {
-      icon: <Twitter className="h-5 w-5" />,
-      label: "Twitter",
-      href: "https://twitter.com/alexdeveloper",
-      username: "@alexdeveloper"
-    }
-  ];
+  {
+    icon: <Github className="h-5 w-5" />,
+    label: "GitHub",
+    href: "https://github.com/TyrantRaj",
+    username: "@TyrantRaj"
+  },
+  {
+    icon: <Linkedin className="h-5 w-5" />,
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/yuvarajdev/",
+    username: "Yuvaraj"
+  },
+  {
+    icon: <Twitter className="h-5 w-5" />,
+    label: "Twitter",
+    href: "https://x.com/UniversalK75785",
+    username: "@UniversalK75785"
+  }
+];
+
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;

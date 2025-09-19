@@ -6,63 +6,67 @@ const Achievements = () => {
   const achievements = [
     {
       id: 1,
-      title: "First Place - National Coding Championship",
-      description: "Won first place in the National Level Coding Championship among 5000+ participants, solving complex algorithmic problems.",
+      title: "1st Prize – SRM Hackathon",
+      description: "Won 1st prize in a hackathon at SRM by developing a Sign Language Recognition system that translates hand gestures into English.",
+      date: "2024",
+      category: "Hackathon",
+      icon: <Trophy className="h-6 w-6" />,
+      location: "SRM University, India",
+      participants: "300+"
+}
+,
+    {
+      id: 2,
+      title: "1st Prize – IEEE Day Technical Quiz",
+      description: "Secured 1st prize in the IEEE Day Technical Quiz held at our college, SA Engineering, by demonstrating strong problem-solving and technical knowledge.",
       date: "2024",
       category: "Competition",
       icon: <Trophy className="h-6 w-6" />,
-      location: "New Delhi, India",
-      participants: "5000+"
-    },
-    {
-      id: 2,
-      title: "Published Game on Steam",
-      description: "Successfully published indie game 'Pixel Quest' on Steam platform with 10,000+ downloads and 4.5/5 rating.",
-      date: "2023",
-      category: "Achievement",
-      icon: <Star className="h-6 w-6" />,
-      location: "Global",
-      participants: "10,000+ players"
-    },
+      location: "SA Engineering College, India",
+      participants: "50+"
+    }
+  ,
     {
       id: 3,
-      title: "Google Summer of Code",
-      description: "Selected for Google Summer of Code program, contributed to open source project with 50+ commits and feature implementations.",
-      date: "2023",
-      category: "Program",
+      title: "Released Game on Google Play Store",
+      description: "Published the Game app 'Circle Chaos' on Google Play Store, developed independently using Unity.",
+      date: "2021",
+      category: "Project",
       icon: <Award className="h-6 w-6" />,
-      location: "Remote",
-      participants: "Selected from 40,000+ applicants"
-    },
+      location: "Google Play Store",
+      participants: "N/A"
+}
+,
     {
       id: 4,
-      title: "HackerRank 5-Star Rating",
-      description: "Achieved 5-star rating in Problem Solving, Python, and Java on HackerRank platform with top 1% ranking.",
+      title: "12th Place – National Game Jam",
+      description: "Achieved 12th place nationwide in a game jam with the 2D platformer 'Fragile Relic', showcasing creativity and gameplay design skills.",
       date: "2023",
-      category: "Certification",
-      icon: <Star className="h-6 w-6" />,
-      location: "Online",
-      participants: "Top 1%"
-    },
+      category: "Competition",
+      icon: <Trophy className="h-6 w-6" />,
+      location: "India",
+      participants: "Nationwide"
+}
+,
     {
       id: 5,
-      title: "Best Innovation Award - Smart India Hackathon",
-      description: "Led team of 6 developers to win Best Innovation Award for developing AI-powered healthcare solution.",
-      date: "2022",
-      category: "Hackathon",
-      icon: <Users className="h-6 w-6" />,
-      location: "Mumbai, India",
-      participants: "1000+ teams"
+      title: "100+ Problems Solved – LeetCode",
+      description: "Solved over 100 algorithmic and data structure problems on LeetCode to strengthen problem-solving and coding skills.",
+      date: "2024-Present",
+      category: "Personal Achievement",
+      icon: <Award className="h-6 w-6" />,
+      location: "Online",
+      participants: "N/A"
     },
     {
       id: 6,
-      title: "Open Source Contributor",
-      description: "Active contributor to major open source projects including React, Vue.js with 100+ merged pull requests.",
-      date: "2022-Present",
-      category: "Contribution",
+      title: "700+ Problems Solved – Skillrack",
+      description: "Completed over 700 programming and algorithm challenges on Skillrack, enhancing coding proficiency and competitive programming skills.",
+      date: "2024",
+      category: "Personal Achievement",
       icon: <Award className="h-6 w-6" />,
-      location: "Global",
-      participants: "100+ PRs merged"
+      location: "Online",
+      participants: "N/A"
     }
   ];
 
@@ -140,10 +144,10 @@ const Achievements = () => {
         {/* Statistics */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { label: "Competitions Won", value: "15+" },
-            { label: "Projects Completed", value: "50+" },
-            { label: "GitHub Stars", value: "1.2K+" },
-            { label: "Code Commits", value: "5K+" }
+            { label: "Competitions Won", value: "3+" },
+            { label: "Projects Completed", value: "10+" },
+            { label: "GitHub Contribution", value: "120+" },
+            { label: "Code Commits", value: "1K+" }
           ].map((stat, index) => (
             <div key={index} className="text-center">
             <div className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2">

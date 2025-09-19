@@ -57,7 +57,7 @@ const Footer = () => {
             <div className="flex space-x-4">
               <Button variant="ghost" size="icon" asChild>
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/TyrantRaj" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="GitHub Profile"
@@ -67,7 +67,7 @@ const Footer = () => {
               </Button>
               <Button variant="ghost" size="icon" asChild>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/yuvarajdev/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="LinkedIn Profile"
@@ -77,7 +77,7 @@ const Footer = () => {
               </Button>
               <Button variant="ghost" size="icon" asChild>
                 <a 
-                  href="https://twitter.com" 
+                  href="https://x.com/UniversalK75785" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="Twitter Profile"
@@ -87,7 +87,7 @@ const Footer = () => {
               </Button>
               <Button variant="ghost" size="icon" asChild>
                 <a 
-                  href="mailto:alex@developer.com"
+                  href="mailto:tyrantraj@gmail.com"
                   aria-label="Send Email"
                 >
                   <Mail className="h-5 w-5" />
@@ -103,12 +103,6 @@ const Footer = () => {
             <p className="text-muted-foreground text-sm">
               © {currentYear} Yuvaraj Developer. All rights reserved.
             </p>
-            
-            <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-              <span>Made with</span>
-              <Heart className="h-4 w-4 text-red-500 fill-current" />
-              <span>using React & Tailwind CSS</span>
-            </div>
           </div>
         </div>
       </div>

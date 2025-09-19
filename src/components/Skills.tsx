@@ -9,24 +9,22 @@ const Skills = () => {
       title: "Programming Languages",
       icon: <Code className="h-6 w-6" />,
       skills: [
-        { name: "JavaScript/TypeScript", level: 95 },
+        { name: "C#", level: 95 },
         { name: "Python", level: 90 },
         { name: "Java", level: 85 },
         { name: "C++", level: 80 },
-        { name: "C#", level: 75 },
-        { name: "Go", level: 70 }
+        { name: "JavaScript/TypeScript", level: 75 },
       ]
     },
     {
       title: "Web Development",
       icon: <Code className="h-6 w-6" />,
       skills: [
-        { name: "React/Next.js", level: 95 },
-        { name: "Vue.js/Nuxt.js", level: 85 },
-        { name: "Node.js/Express", level: 90 },
-        { name: "HTML/CSS", level: 95 },
+        { name: "HTML", level: 95 },
+        { name: "CSS", level: 85 },
+        { name: "JS", level: 90 },
+        { name: "Bootstrap", level: 95 },
         { name: "Tailwind CSS", level: 90 },
-        { name: "GraphQL", level: 75 }
       ]
     },
     {
@@ -34,11 +32,7 @@ const Skills = () => {
       icon: <Database className="h-6 w-6" />,
       skills: [
         { name: "MongoDB", level: 90 },
-        { name: "PostgreSQL", level: 85 },
-        { name: "Redis", level: 80 },
-        { name: "Firebase", level: 85 },
-        { name: "Supabase", level: 80 },
-        { name: "REST APIs", level: 95 }
+        { name: "Firebase", level: 95 }
       ]
     },
     {
@@ -50,7 +44,7 @@ const Skills = () => {
         { name: "Game Design", level: 85 },
         { name: "2D/3D Art", level: 70 },
         { name: "Physics Systems", level: 80 },
-        { name: "Multiplayer Networking", level: 75 }
+        { name: "Multiplayer Networking", level: 90 }
       ]
     },
     {
@@ -61,36 +55,34 @@ const Skills = () => {
         { name: "Flutter", level: 75 },
         { name: "iOS Development", level: 70 },
         { name: "Android Development", level: 80 },
-        { name: "PWA", level: 90 },
         { name: "Mobile UI/UX", level: 85 }
       ]
     },
     {
-      title: "DevOps & Cloud",
-      icon: <Cloud className="h-6 w-6" />,
+      title: "Gaming Skills",
+      icon: <Gamepad2 className="h-6 w-6" />,
       skills: [
-        { name: "Docker", level: 85 },
-        { name: "AWS", level: 80 },
-        { name: "Vercel/Netlify", level: 90 },
-        { name: "GitHub Actions", level: 85 },
-        { name: "Linux", level: 80 },
-        { name: "Nginx", level: 75 }
+        { name: "Story Games", level: 100 },
+        { name: "FPS Games", level: 100 },
+        { name: "Strategy Games", level: 100 },
+        { name: "Mobile Gaming", level: 100 },
+        { name: "Competitive Multiplayer", level: 100 }
       ]
     }
+
   ];
 
   const tools = [
-    "Visual Studio Code", "Git & GitHub", "Figma", "Postman", "Discord",
-    "Slack", "Trello", "Notion", "Photoshop", "Blender", "Audacity"
+    "Visual Studio Code", "Git & GitHub", "Figma", "Discord",
+    "Unity", "Unreal", "Inkscape", "Photoshop", "Blender", "Audacity","Sfxr","Asprite"
   ];
 
   const certifications = [
-    "AWS Cloud Practitioner",
-    "Google Cloud Associate",
-    "Meta React Developer",
-    "Unity Certified Programmer",
-    "MongoDB Developer",
-    "GitHub Foundations"
+    "Kotlin",
+    "Python",
+    "Unity",
+    "MongoDB",
+    "Ethical Hacking"
   ];
 
   return (
