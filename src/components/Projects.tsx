@@ -17,70 +17,73 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
+      title: "Dental Website",
+      description: "Responsive dental clinic website built for a client using Bootstrap, HTML, CSS, and JavaScript.",
       category: "web",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "JWT"],
-      image: "/placeholder.svg",
-      liveUrl: "#",
-      githubUrl: "#",
+      technologies: ["Bootstrap", "HTML", "CSS", "JavaScript"],
+      image: "/images/dental-website.png",  
+      liveUrl: "https://olivedentistry.in",
+      githubUrl: "https://github.com/TyrantRaj/dental-web-project",  
       featured: true
-    },
+  }
+  ,
     {
       id: 2,
-      title: "2D Platformer Game",
-      description: "Indie 2D platformer game built with Unity. Features custom physics, level editor, and original soundtrack. Published on Steam.",
+      title: "Circle Chaos 2D",
+      description: "A 2D chaos platformer with random events, inverted controls, and unique physics. Built with Unity and published on PlayStore.",
       category: "game",
       technologies: ["Unity", "C#", "Photoshop", "Audacity"],
-      image: "/placeholder.svg",
-      liveUrl: "#",
-      githubUrl: "#",
+      image: "/images/CircleChaos.png",
+      liveUrl: "https://play.google.com/store/apps/details?id=com.tyrantgames.circlechaos&hl=en_IN",
+      githubUrl: "https://github.com/TyrantRaj/Circle-Chaos",
       featured: true
-    },
+    }
+,
     {
-      id: 3,
-      title: "Task Management App",
-      description: "Cross-platform mobile app for task management with offline sync. Built with React Native and Firebase.",
-      category: "mobile",
-      technologies: ["React Native", "Firebase", "AsyncStorage", "Redux"],
-      image: "/placeholder.svg",
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
+    id: 3,
+    title: "Fragile Relic 2D ",
+    description: "2D platformer game with challenging levels and collectibles. Built with Unity, published on Itch.io, and ranked 12th nationally in a game jam.",
+    category: "game",
+    technologies: ["Unity", "C#", "Photoshop", "sfxr"],
+    image: "/images/fragilerelic.png",
+    liveUrl: "https://tyrantrraj.itch.io/the-fragile-relic",
+    featured: false
+}
+,
     {
       id: 4,
-      title: "AI Chat Interface",
-      description: "Modern chat interface with AI integration. Real-time messaging with WebSocket and OpenAI API integration.",
-      category: "web",
-      technologies: ["React", "WebSocket", "OpenAI API", "Tailwind"],
-      image: "/placeholder.svg",
-      liveUrl: "#",
-      githubUrl: "#",
+      title: "Speed Math App",
+      description: "An Android app to practice mental math quickly. Built with Android Studio and published on Google Play during my 11th grade holidays.",
+      category: "mobile",
+      technologies: ["Android Studio", "Java", "XML"],
+      image: "/images/speedmath.png",
+      liveUrl: "https://play.google.com/store/apps/details?id=com.yuvaraj.speedmath",
       featured: false
-    },
+}
+,
     {
       id: 5,
-      title: "Multiplayer Puzzle Game",
-      description: "Real-time multiplayer puzzle game with custom networking solution. Built for web browsers using WebGL.",
-      category: "game",
-      technologies: ["Unity", "WebGL", "Photon", "C#"],
-      image: "/placeholder.svg",
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
+      title: "Sign Language Recognition",
+      description: "A Python-based system that translates hand gestures into English. Won 1st prize in a hackathon.",
+      category: "ml",
+      technologies: ["Python", "OpenCV", "MediaPipe", "TensorFlow"],
+      image: "/images/signlanguage.jpg",
+      liveUrl: "https://github.com/TyrantRaj/Sign-Language-Learner",
+      githubUrl: "https://github.com/TyrantRaj/Sign-Language-Learner",
+      featured: true
+}
+,
     {
       id: 6,
-      title: "Weather Dashboard",
-      description: "Beautiful weather dashboard with location-based forecasts and interactive maps. PWA with offline capabilities.",
-      category: "web",
-      technologies: ["Vue.js", "PWA", "Weather API", "Mapbox"],
-      image: "/placeholder.svg",
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    }
+      title: "Missile Run",
+      description: "A fast-paced 2D game where players dodge incoming missiles. Built with Unity with engaging mechanics and dynamic controls",
+      category: "game",
+      technologies: ["Unity", "C#", "Photoshop", "sfxr"],
+      image: "/images/missile.png",
+      liveUrl: "https://github.com/TyrantRaj/Missile-Run",
+      githubUrl: "https://github.com/TyrantRaj/Missile-Run",
+      featured: true
+}
   ];
 
   const filteredProjects = activeFilter === "all" 
@@ -123,9 +126,14 @@ const Projects = () => {
               className="group hover:shadow-card transition-smooth gradient-card border-border/50 flex flex-col"
             >
               <CardHeader className="pb-4 flex-shrink-0">
-                <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                  <span className="text-muted-foreground">Project Preview</span>
+                <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.title} 
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
                 </div>
+
                 
                 <div className="flex items-start justify-between">
                   <div className="flex-1">
@@ -175,7 +183,7 @@ const Projects = () => {
 
         <div className="text-center mt-12">
           <Button variant="outline" size="lg" asChild>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/TyrantRaj?tab=repositories" target="_blank" rel="noopener noreferrer">
               <Github className="mr-2 h-4 w-4" />
               View All Projects on GitHub
             </a>

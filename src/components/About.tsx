@@ -7,7 +7,7 @@ const About = () => {
     {
       icon: <GraduationCap className="h-6 w-6" />,
       title: "Computer Science Engineering",
-      description: "B.Tech in CSE with focus on software development and algorithms"
+      description: "B.E in CSE with focus on software development and algorithms"
     },
     {
       icon: <Code className="h-6 w-6" />,

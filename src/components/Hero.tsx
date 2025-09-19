@@ -56,29 +56,36 @@ const Hero = () => {
             </Button>
             
             <Button 
-              variant="outline" 
-              size="lg"
-              className="w-full sm:w-auto"
-            >
-              <Download className="mr-2 h-4 w-4" />
-              Download Resume
-            </Button>
+  asChild 
+  variant="outline" 
+  size="lg"
+  className="w-full sm:w-auto"
+>
+  <a 
+    href="/resume.pdf"  // put your file inside /public folder
+    download="Yuvaraj_Resume.pdf"
+  >
+    <Download className="mr-2 h-4 w-4" />
+    Download Resume
+  </a>
+</Button>
+
           </div>
 
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-12">
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+              <a href="https://github.com/TyrantRaj" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
                 <Github className="h-5 w-5" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+              <a href="https://www.linkedin.com/in/yuvarajdev/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                 <Linkedin className="h-5 w-5" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="mailto:contact@yuvarajdev.com" aria-label="Send Email">
+              <a href="mailto:tyrantraj@gmail.com" aria-label="Send Email">
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
@@ -86,13 +93,13 @@ const Hero = () => {
         </div>
 
         {/* Scroll indicator */}
-        <button
+        {/* <button
           onClick={() => scrollToSection("about")}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
           aria-label="Scroll to about section"
         >
           <ChevronDown className="h-8 w-8 text-muted-foreground hover:text-primary transition-smooth" />
-        </button>
+        </button> */}
       </div>
     </section>
   );
