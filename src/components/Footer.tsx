@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="space-y-4">
             <button 
               onClick={scrollToTop}
-              className="text-2xl font-bold gradient-primary bg-clip-text text-transparent hover:scale-105 transition-smooth"
+              className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent hover:scale-105 transition-smooth"
             >
               Alex.dev
             </button>

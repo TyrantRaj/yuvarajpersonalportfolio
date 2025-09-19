@@ -15,7 +15,7 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-muted hover:text-foreground transition-smooth",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "gradient-primary text-background font-semibold shadow-glow hover:shadow-intense transition-smooth animate-glow",
+        hero: "bg-gradient-to-r from-primary to-secondary text-background font-semibold shadow-glow hover:shadow-intense transition-smooth animate-glow",
         tech: "bg-card border border-primary/20 text-foreground hover:bg-primary/10 hover:border-primary/40 transition-smooth",
         game: "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-card transition-smooth",
       },

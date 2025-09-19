@@ -36,7 +36,7 @@ const About = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            About <span className="gradient-primary bg-clip-text text-transparent">Me</span>
+            About <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A passionate Computer Science Engineer who loves building things that matter. 

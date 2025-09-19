@@ -134,8 +134,11 @@
 
 @layer utilities {
   /* Custom Utility Classes */
-  .gradient-primary {
+  .gradient-text {
     background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   .gradient-hero {

@@ -80,7 +80,7 @@ const Achievements = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Achievements & <span className="gradient-primary bg-clip-text text-transparent">Recognition</span>
+            Achievements & <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Recognition</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Milestones and accomplishments that showcase my dedication to excellence in 
@@ -146,9 +146,9 @@ const Achievements = () => {
             { label: "Code Commits", value: "5K+" }
           ].map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-3xl font-bold gradient-primary bg-clip-text text-transparent mb-2">
-                {stat.value}
-              </div>
+            <div className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2">
+              {stat.value}
+            </div>
               <div className="text-sm text-muted-foreground">
                 {stat.label}
               </div>

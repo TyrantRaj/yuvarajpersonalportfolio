@@ -49,7 +49,7 @@ const Navigation = () => {
           <div className="flex-shrink-0">
             <button 
               onClick={() => scrollToSection("hero")}
-              className="text-xl font-bold gradient-primary bg-clip-text text-transparent hover:scale-105 transition-smooth"
+              className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent hover:scale-105 transition-smooth"
             >
               Alex.dev
             </button>
