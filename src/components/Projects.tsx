@@ -80,7 +80,7 @@ const Projects = () => {
       category: "game",
       technologies: ["Unity", "C#", "Photoshop", "sfxr"],
       image: "/images/missile.png",
-      liveUrl: "https://github.com/TyrantRaj/Missile-Run",
+      liveUrl: "https://tyrantrraj.itch.io/missilerun-2d",
       githubUrl: "https://github.com/TyrantRaj/Missile-Run",
       featured: true
 }
